@@ -3,10 +3,10 @@
 public class MoveGameObjectBackAndForth : MonoBehaviour
 {
     // How fast the object should move
-    private float _speed = 3;
+    public float _speed = 3;
 
     // How far the object will travel before turning around
-    private float _distance = 3;
+    public float _distance = 3;
 
     // save the starting position of the object here so we can calculate how far it has traveled
     private Vector3 _startingPos;
