@@ -15,7 +15,7 @@ public class PlatformerController : MonoBehaviour
     private bool onGround;
     private bool canJump;
 
-    public Animator char_animator;
+   // public Animator char_animator;
     public AudioClip impact;
     AudioSource audioSource;
 
@@ -43,7 +43,7 @@ public class PlatformerController : MonoBehaviour
         }
 
         //calls the character animator with the movement script below. 
-        char_animator.SetFloat("speed", rb.velocity.x);
+        //char_animator.SetFloat("speed", rb.velocity.x);
 
 
         //Movement code for left and right arrow keys.
