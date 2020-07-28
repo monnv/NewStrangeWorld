@@ -16,21 +16,21 @@ public class PlatformerController : MonoBehaviour
     private bool canJump;
 
     public Animator char_animator;
+    public AudioClip impact;
+    AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
     {
         //Sets our variable 'rb' to the Rigidbody2D component on the game object where this script is attached.
         rb = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
 
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        char_animator.SetFloat("speed", rb.velocity.x);
-
         //Check if the player is on the ground. If we are, then we are able to jump.
         if (onGround == true)
         {
@@ -41,19 +41,18 @@ public class PlatformerController : MonoBehaviour
         {
             rb.velocity = Vector2.up * jumpHeight;
         }
-        else
-        {
-            canJump = false;
-        }
+
+        //calls the character animator with the movement script below. 
+        char_animator.SetFloat("speed", rb.velocity.x);
 
 
         //Movement code for left and right arrow keys.
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.A))
         {
             rb.velocity = new Vector2(-speed, rb.velocity.y);
         }
 
-        else if (Input.GetKey(KeyCode.RightArrow))
+        else if (Input.GetKey(KeyCode.D))
         {
             rb.velocity = new Vector2(+speed, rb.velocity.y);
         }
@@ -72,6 +71,7 @@ public class PlatformerController : MonoBehaviour
         {
             onGround = true;
             print(onGround);
+            print("We grounded now");
             //print statements print to the Console panel in Unity. 
             //This will print the value of onGround, which is a boolean, so either True or False.
         }
