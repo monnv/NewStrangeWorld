@@ -25,6 +25,16 @@ public class MoveObjectUpandDown : MonoBehaviour
         _startingPos = transform.position;
     }
 
+    private bool moving;
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag =="Player")
+        {
+            moving = true;
+            collision.collider.transform.SetParent(transform);
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
