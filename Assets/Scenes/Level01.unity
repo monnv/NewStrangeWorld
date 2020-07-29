@@ -327,7 +327,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 750845354}
   smoothSpeed: 0.125
-  offset: {x: 0, y: 0, z: -10}
+  offset: {x: 6, y: 0, z: -1}
 --- !u!1 &560538821
 GameObject:
   m_ObjectHideFlags: 0
@@ -985,7 +985,7 @@ GameObject:
   - component: {fileID: 750845349}
   m_Layer: 0
   m_Name: charlie_idle_anim_0
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
