@@ -582,6 +582,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d67675e1d79f574c9060ff830c8440d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bounds: 1
+  minCameraPos: {x: -2.15, y: 0, z: -1}
+  maxCameraPos: {x: 7, y: 2, z: 0}
   player: {fileID: 1038809108}
   smoothSpeed: 0.125
   offset: {x: 5, y: 0, z: -1}
@@ -939,11 +942,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: 
+  - name: Level02
     clip: {fileID: 8300000, guid: a0ed8ee15415e834b81ca6c2de112545, type: 3}
     volume: 1
     pitch: 0.1
-    loop: 0
+    loop: 1
     source: {fileID: 0}
 --- !u!4 &876719346
 Transform:
@@ -993,7 +996,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.26316237}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1004,7 +1007,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.73, y: 12.67}
+  m_Size: {x: 6.73, y: 12.143675}
   m_EdgeRadius: 0
 --- !u!50 &1038809105
 Rigidbody2D:
@@ -1102,7 +1105,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1038809103}
   m_LocalRotation: {x: -0, y: -0, z: 0.0034130348, w: 0.99999416}
-  m_LocalPosition: {x: -7.097, y: 0.071, z: 0}
+  m_LocalPosition: {x: -7.097, y: 0.032, z: 0}
   m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1158,7 +1161,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.15111637, y: 0.25094628}
+  m_Offset: {x: 0.15111637, y: 0.18082255}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1169,7 +1172,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8.824354, y: 3.7738776}
+  m_Size: {x: 8.824354, y: 3.6336303}
   m_EdgeRadius: 0
 --- !u!212 &1070354673
 SpriteRenderer:

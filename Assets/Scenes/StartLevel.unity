@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 9072968}
   m_Layer: 0
   m_Name: charlie_idle_anim_0
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -283,7 +283,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9072967}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.27, y: -2.09, z: 0}
+  m_LocalPosition: {x: -6.5, y: -2.09, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children: []
   m_Father: {fileID: 0}
@@ -381,6 +381,7 @@ GameObject:
   - component: {fileID: 246754562}
   - component: {fileID: 246754561}
   - component: {fileID: 246754560}
+  - component: {fileID: 246754563}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -453,6 +454,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &246754563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246754559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d67675e1d79f574c9060ff830c8440d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounds: 1
+  minCameraPos: {x: 0, y: 0, z: -10}
+  maxCameraPos: {x: 2.5, y: 0, z: 0}
+  player: {fileID: 9072973}
+  smoothSpeed: 0.125
+  offset: {x: 6.5, y: 2.1, z: -1}
 --- !u!1 &328107491
 GameObject:
   m_ObjectHideFlags: 0
@@ -678,7 +697,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b6961a2261f75046a3757b3765be440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: []
+  sounds:
+  - name: 
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: 
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: 
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: 
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    loop: 0
+    source: {fileID: 0}
 --- !u!4 &876719346
 Transform:
   m_ObjectHideFlags: 0

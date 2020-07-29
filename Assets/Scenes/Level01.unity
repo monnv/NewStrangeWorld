@@ -325,6 +325,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d67675e1d79f574c9060ff830c8440d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bounds: 1
+  minCameraPos: {x: -1, y: 0, z: -10}
+  maxCameraPos: {x: 5, y: 0, z: -10}
   player: {fileID: 750845354}
   smoothSpeed: 0.125
   offset: {x: 6.5, y: 0, z: -1}
