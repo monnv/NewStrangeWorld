@@ -45,7 +45,8 @@ public class AudioManager : MonoBehaviour
     void Start ()
     {
 
-        Play("OpeningMusic");
+        Play("birds");
+        Play("crickets");
     }
 
 
