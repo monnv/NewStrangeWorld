@@ -34,6 +34,14 @@ public class MoveGameObjectBackAndForth : MonoBehaviour
             collision.collider.transform.SetParent(transform);
         }
     }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            moving = true;
+            collision.collider.transform.SetParent(null);
+        }
+    }
 
     // Update is called once per frame
     void Update()
